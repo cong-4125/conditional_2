@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bkt = parseInt(prompt('number'));
+    let dt1 = parseInt(prompt('number'));
+    let dt2= parseInt(prompt('number'));
+    let dtb = 0.2*bkt + 0.3*dt1 + 0.5*dt2 ;
+        if (dtb <= 4 && dtb >= 0) {
+            alert('xep loai D');
+        }
+        else {
+            if (dtb <= 6) {
+                alert('xep loại C');
+            } else {
+                if (dtb <= 8) {
+                    alert('xep loai B ');
+                } else {
+                    alert('xep loai A')
+                }
+            }
+        }
+</script>
+</body>
+</html>

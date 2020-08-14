@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="demo" value="">
+    <button onclick="ngaycuathang()">Tinhs so ngay</button>
+<script>
+function ngaycuathang() {
+    let number = parseInt(document.getElementById("demo").value);
+    switch (number) {
+        case 1 :
+        case 3 :
+        case 5 :
+        case 7 :
+        case 8 :
+        case 10 :
+        case 12 :
+            alert(' thang 31 ngay');
+            break;
+        case 4 :
+        case 6 :
+        case 9 :
+        case 11 :
+            alert('thang 30 ngay');
+            break;
+       case 2 :
+            alert('thang 2 có 28 hoặc 29 ngày');
+            break;
+            default :
+                alert('ko co tháng này')
+    }
+}
+</script>
+</body>
+</html>
